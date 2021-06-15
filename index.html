@@ -3,16 +3,31 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' localhost:*; script-src 'self' localhost:*"> -->
+    <!-- <meta http-equiv="X-Content-Security-Policy" content="default-src 'self' localhost:*; script-src 'self' localhost:*"> -->
+    <title>Four Job Fiesta - Current Party</title>
+    <link rel="stylesheet" href="fiesta.css">
   </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
+  <body style="-webkit-app-region: drag">
+    <div id="underlay">
+      <div id="party">
+        <div id="slot1" class='slot'>
+          <img src="sprites/unoccupied.png">
+        </div>
+        <div id="slot2" class='slot'>
+          <img src="sprites/unoccupied.png">
+        </div>
+        <div id="slot3" class='slot'>
+          <img src="sprites/unoccupied.png">
+        </div>
+        <div id="slot4" class='slot'>
+          <img src="sprites/unoccupied.png">
+        </div>
+      </div>
+      <div id="hints">
+        <span>Hi! Hints from Enkibot go here.</span>
+      </div>
+    </div>
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
   </body>

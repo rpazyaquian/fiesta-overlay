@@ -1,0 +1,48 @@
+body {
+  border-image-source: url("./sprites/menu.png");
+  border-image-slice: 51 36 30 36 fill;
+  border-width: 36px;
+  border-style: solid;
+  margin: 0;
+  height: 728px;
+}
+
+#underlay {
+  height: inherit;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+#party {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  flex-grow: 1;
+}
+
+#hints {
+  flex-basis: 9%;
+
+  color: white;
+}
+
+.slot {
+  height: 25%;
+  image-rendering: pixelated;
+  padding: 20px 0px;
+}
+
+.sprite {
+  height: 100%;
+  transform: scaleX(-1);
+}
