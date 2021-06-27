@@ -1,8 +1,3 @@
-// TODO:
-// - add a react app
-// - render the party based on their jobs
-// - hit the server every 3 seconds and update the current party state
-
 // spin off server as a child process
 const { fork } = require('child_process')
 const ps = fork(`${__dirname}/server.js`)
@@ -16,6 +11,7 @@ function createWindow () {
   const mainWindow = new BrowserWindow({
     width: 1280,
     height: 800,
+    resizable: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     },
