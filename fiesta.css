@@ -5,6 +5,7 @@ body {
   border-style: solid;
   margin: 0;
   height: 728px;
+  overflow: hidden;
 }
 
 #underlay {
@@ -30,10 +31,37 @@ body {
   flex-grow: 1;
 }
 
-#hints {
-  flex-basis: 9%;
+#sidebar {
+  width: 9%;
 
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  justify-content: space-between;
+}
+
+#hints {
   color: white;
+  font-family: VT323;
+  font-size: 20px;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+#gilgamesh {
+  image-rendering: pixelated;
+}
+
+#gilgamesh img {
+  transform: rotate(225deg) translateY(131%) scale(3);
+}
+
+#enkidu {
+  image-rendering: pixelated;
+}
+
+#enkidu img {
+  transform: scaleX(-3) scaleY(3) translateY(24px) translateX(-11px);
 }
 
 .slot {
